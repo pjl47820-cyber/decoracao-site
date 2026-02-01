@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title> Agendamento de Decoração </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+
+    <form id="form-agendamento">
+        <h1>Agendamento de Decoração</h1>
+
+        <label>Tipo de evento</label>
+        <select id="evento" required>
+            <option value="">Selecione</option>
+            <option>Aniversário</option>
+            <option>Casamento</option>
+            <option>Chá de bebê</option>
+            <option>Formatura</option>
+        </select>
+
+        <label>Estilo da decoração</label>
+        <select id="estilo" required>
+            <option value="">Selecione</option>
+            <option>Simples</option>
+            <option>Temática</option>
+            <option>Luxo</option>
+        </select>
+
+        <label>Data do evento</label>
+        <input type="date" id="data" required>
+
+        <label>Horário</label>
+        <input type="time" id="horario" required>
+
+        <label>Nome do cliente</label>
+        <input type="text" id="nome" required>
+
+        <label>WhatsApp</label>
+        <input type="tel" id="whatsapp" placeholder="(99) 99999-9999" required>
+        <label>Tema da decoração</label>
+<input type="text" id="tema" placeholder="Ex: Frozen, Safari, Futebol" required>
+
+
+
+
+<div class="bloco-opcoes">
+    <p class="pergunta-decoracao">O que deseja na decoração?</p>
+    
+    <div class="opcoes">
+        <label class="item-opcao">
+            <input type="checkbox">
+            <span>Painel decorativo</span>
+        </label>
+
+         <label class="item-opcao">
+            <input type="checkbox">
+            <span>Cilindros</span>
+        </label>
+
+        <label class="item-opcao">
+            <input type="checkbox">
+            <span>Mesa principal</span>
+        </label>
+
+        <label class="item-opcao">
+            <input type="checkbox">
+            <span>Arco de balões</span>
+        </label>
+
+        <label class="item-opcao">
+            <input type="checkbox">
+            <span>Balões personalizados</span>
+        </label>
+
+        <label class="item-opcao">
+            <input type="checkbox">
+            <span>Iluminação</span>
+        </label>
+    </div>
+</div>
+
+
+
+
+<label>Observações adicionais</label>
+<textarea id="observacoes" rows="3", cols="50"   placeholder="Descreva algo importante..."></textarea>
+
+        <button type="submit">Agendar</button>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

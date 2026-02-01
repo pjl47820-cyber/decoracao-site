@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #fce7f3, #ede9fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b279e0;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #000000;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #c084fc;
+    box-shadow: 0 0 0 2px rgba(192,132,252,0.2);
+}
+
+button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #86efac;
+    color: #065f46;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #4ade80;
+}
+.opcoes {
+    margin-top: 10px;
+}
+
+/* ===== OPÇÕES DE DECORAÇÃO (VERSÃO FINAL) ===== */
+
+
+.bloco-opcoes {
+    grid-column: 1 / -1;   /* 🔥 ISSO resolve quando o form é grid */
+}
+
+.opcoes {
+    display:inline-flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item-opcao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+/* garante que o bloco das opções ocupe a largura toda */
+.bloco-opcoes {
+    width: 100%;
+    
+}
+
+/* força layout vertical */
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+}
+
+/* cada opção ocupa a linha inteira */
+.item-opcao {
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    color: #2c2c2c;
+}           /* 🔥 ESSENCIAL */
+
+
+/* texto não quebra estranho */
+.item-opcao span {
+    flex: 1;
+    white-space:nowrap;
+
+
+}
+.pergunta-decoracao { 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #000000;
+}
